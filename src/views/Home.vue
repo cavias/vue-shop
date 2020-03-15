@@ -1,10 +1,12 @@
 <template>
-  <b-container>
-    <b-jumbotron header="Vue Shop Experiment" lead="A small little test">
-      <p>For more information visit website</p>
-      <b-button variant="primary" href="#">More Info</b-button>
-    </b-jumbotron>
-  </b-container>
+  <div id="home">
+    <b-nav id="nav">
+      <b-nav-item to="/">Home</b-nav-item>
+      <b-nav-item to="/about">About</b-nav-item>
+      <b-nav-item to="/catalog">Catalog</b-nav-item>
+    </b-nav>
+    <router-view/>
+  </div>
 </template>
 
 <script>
